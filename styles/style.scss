@@ -1,0 +1,20 @@
+// ## Colors
+
+// ### Primary
+
+$Dark-Blue-intro-and-email-sign-up-bg : hsl(217, 28%, 15%);
+$Dark-Blue-main-bg : hsl(218, 28%, 13%);
+$Dark-Blue-footer-bg : hsl(216, 53%, 9%);
+$Dark-Blue-testimonial-bg : hsl(219, 30%, 18%);
+
+// ### Accent
+
+$Cyan : hsl(176, 68%, 64%); //(inside call-to-action gradient)
+$Blue : hsl(198, 60%, 50%); //(inside call-to-action gradient)
+$Light-Red : hsl(0, 100%, 63%); //(error)
+
+// ### Neutral
+
+$White: hsl(0, 0%, 100%);
+
+@import "general";
