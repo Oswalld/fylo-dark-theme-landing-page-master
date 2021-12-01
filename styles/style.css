@@ -386,10 +386,9 @@ header ul a:hover {
   gap: 2em;
 }
 
-.section-sign-up form::after {
-  content: "Please enter a valid email address";
+.section-sign-up form .mail-error {
   position: absolute;
-  top: 104%;
+  top: 40%;
   left: 2.5em;
   font-size: 12px;
   color: #ff4242;
@@ -439,6 +438,10 @@ header ul a:hover {
   background: linear-gradient(to right, #83ece5 5%, #65bfe6);
 }
 
+.hidden {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   .section-sign-up {
     top: 7rem;
@@ -447,7 +450,7 @@ header ul a:hover {
     font-size: 1.5rem;
   }
   .section-sign-up form {
-    width: 100%;
+    width: 103%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -458,12 +461,6 @@ header ul a:hover {
   }
   .section-sign-up form .email-submit-btn {
     width: 30%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .section-sign-up form::after {
-    top: 40%;
   }
 }
 
