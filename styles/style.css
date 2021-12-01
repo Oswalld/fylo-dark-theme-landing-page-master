@@ -450,7 +450,7 @@ header ul a:hover {
     font-size: 1.5rem;
   }
   .section-sign-up form {
-    width: 103%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -458,6 +458,9 @@ header ul a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .section-sign-up form .mail-error {
+    top: 103%;
   }
   .section-sign-up form .email-submit-btn {
     width: 30%;

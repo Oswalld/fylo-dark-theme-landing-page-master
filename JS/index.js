@@ -2,14 +2,6 @@ const form = document.querySelector('.sign-up-form');
 const email = document.querySelector('.email');
 const mailError = document.querySelector('.mail-error');
 
-const setError = () => {
-    mailError.classList.remove('hidden');
-}
-const setSuccess = () => {
-    mailError.classList.add('hidden');
-}
-
-
 const validateEmail = (email) => {
     return String(email)
         .toLowerCase()
@@ -21,13 +13,11 @@ const validateEmail = (email) => {
 const checkEmail = () => {
     const emailValue = email.value.trim();
     if (emailValue === '' || !validateEmail(emailValue)) {
-        setError();
+        mailError.classList.remove('hidden');
     } else if (validateEmail(emailValue)) {
-        setSuccess();
+        mailError.classList.add('hidden');
     }
 }
-
-
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
