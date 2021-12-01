@@ -2,6 +2,11 @@ footer{
     background-color: $Dark-Blue-footer-bg;
     padding: 15em 2em 2em 2em;
 
+    .footer{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
     .logo{
         width: 15em;
     }

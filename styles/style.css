@@ -472,6 +472,11 @@ footer {
   padding: 15em 2em 2em 2em;
 }
 
+footer .footer {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 footer .logo {
   width: 15em;
 }
