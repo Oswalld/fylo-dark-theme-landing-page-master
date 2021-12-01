@@ -291,7 +291,7 @@ header ul a:hover {
       grid-template-columns: repeat(auto-fit, minmax(100px, 360px));
   width: 80%;
   max-width: 1140px;
-  margin: 10em auto;
+  margin: 10em auto 5em auto;
 }
 
 .testimonial-block {
@@ -332,5 +332,245 @@ header ul a:hover {
 .testimonial-customer h5 span {
   font-weight: 400;
   font-size: 11px;
+}
+
+.section-sign-up {
+  position: relative;
+  top: 10rem;
+  background-color: #1c2431;
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 7px 5px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 7px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.5em;
+  width: 90%;
+  max-width: 800px;
+  padding: 2.5em 3em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-sign-up h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+.section-sign-up form {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2em;
+}
+
+.section-sign-up form::after {
+  content: "Please enter a valid email address";
+  position: absolute;
+  top: 104%;
+  left: 2.5em;
+  font-size: 12px;
+  color: #ff4242;
+}
+
+.section-sign-up form .email {
+  position: relative;
+  width: 100%;
+  padding: 1.1em 2.5em;
+  border-radius: 55rem;
+  border: none;
+}
+
+.section-sign-up form .email::-webkit-input-placeholder {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.301);
+}
+
+.section-sign-up form .email:-ms-input-placeholder {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.301);
+}
+
+.section-sign-up form .email::-ms-input-placeholder {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.301);
+}
+
+.section-sign-up form .email::placeholder {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.301);
+}
+
+.section-sign-up form .email-submit-btn {
+  width: 100%;
+  padding: 1.1em 2.5em;
+  border-radius: 55rem;
+  border: none;
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, color-stop(5%, #65e2d9), to(#339ecc));
+  background: linear-gradient(to right, #65e2d9 5%, #339ecc);
+}
+
+.section-sign-up form .email-submit-btn:hover {
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, right top, color-stop(5%, #83ece5), to(#65bfe6));
+  background: linear-gradient(to right, #83ece5 5%, #65bfe6);
+}
+
+@media only screen and (min-width: 768px) {
+  .section-sign-up {
+    top: 7rem;
+  }
+  .section-sign-up h3 {
+    font-size: 1.5rem;
+  }
+  .section-sign-up form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .section-sign-up form .email-submit-btn {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section-sign-up form::after {
+    top: 40%;
+  }
+}
+
+footer {
+  background-color: #0b1523;
+  padding: 15em 2em 2em 2em;
+}
+
+footer .logo {
+  width: 15em;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+  margin-top: 3em;
+}
+
+.footer-content .footer-content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1em;
+}
+
+.footer-content .footer-content-block img {
+  height: 100%;
+}
+
+.footer-content ul {
+  display: -ms-grid;
+  display: grid;
+  gap: 1em;
+  margin-top: 2em;
+  list-style: none;
+}
+
+.footer-content ul a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  opacity: 0.7;
+}
+
+.footer-content ul a:hover {
+  opacity: 1;
+}
+
+.footer-content .social-icons a {
+  text-decoration: none;
+  color: white;
+  padding: 0.4em;
+}
+
+.footer-content .social-icons a:hover {
+  color: #65e2d9;
+}
+
+.truc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    padding: 13em 5em 5em 5em;
+  }
+  .footer-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .footer-content .footer-content-block img {
+    height: 1.2em;
+  }
+  .footer-content .localisation {
+    width: 30%;
+  }
+  .footer-content ul {
+    margin-top: 0;
+  }
+  .footer-content .social-icons a {
+    text-decoration: none;
+    color: white;
+    padding: 0.4em;
+  }
+  .footer-content .social-icons a:hover {
+    color: #65e2d9;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,103 @@
+.section-sign-up{
+    position: relative;
+    top: 10rem;
+    background-color: $Dark-Blue-intro-and-email-sign-up-bg;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 7px 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+
+    width: 90%;
+    max-width: 800px;
+    padding: 2.5em 3em;
+    margin: 0 auto;
+
+    text-align: center;
+
+    h3{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+    }
+
+    form{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+
+        &::after{
+            content: "Please enter a valid email address";
+            position: absolute;
+            top: 104%;
+            left: 2.5em;
+            font-size: 12px;
+            color: $Light-Red;
+        }
+
+        .email{
+            position: relative;
+            width: 100%;
+            padding: 1.1em 2.5em;
+            border-radius: 55rem;
+            border: none;
+            
+            &::placeholder{
+                font-size: 11px;
+                color: rgba(0, 0, 0, 0.301);
+            }
+            
+        }
+        .email-submit-btn{
+            width: 100%;
+            padding: 1.1em 2.5em;
+            border-radius: 55rem;
+            border: none;
+            color: $White;
+            background: linear-gradient(to right, $Cyan 5%, $Blue);
+
+            &:hover{
+                cursor: pointer;
+                background: linear-gradient(to right, hsl(176, 73%, 72%) 5%, hsl(198, 72%, 65%));
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width : 768px){
+    .section-sign-up{
+        top: 7rem;
+
+        h3{
+            font-size: 1.5rem;
+        }
+    
+        form{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+
+            .email-submit-btn{
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 768px){
+    .section-sign-up{
+        form{
+            &::after{
+                top: 40%;
+            }
+        }
+    }
+}
