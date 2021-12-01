@@ -1,0 +1,54 @@
+header{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1040px;
+
+
+    padding: 2em;
+    margin: 0 auto;
+
+    .logo{
+        width: 6em;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 1em;
+
+        a{
+            text-decoration: none;
+            color: $White;
+            opacity: 0.7;
+
+            &:hover{
+                text-decoration: underline;
+                text-underline-offset: 2px;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width : 768px) {
+    header{
+    
+        padding: 3em;
+    
+        .logo{
+            width: 10em;
+        }
+    
+        ul{
+            gap: 3.5em;
+            font-size: 1rem;
+        }
+    }
+}

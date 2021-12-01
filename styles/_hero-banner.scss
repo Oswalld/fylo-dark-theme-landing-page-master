@@ -1,0 +1,76 @@
+.hero-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10%;
+
+    background-color: $Dark-Blue-intro-and-email-sign-up-bg;
+    background-image: url(../images/bg-curvy-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    img{
+        margin-top: 7em;
+        width: 100%;
+        max-width: 700px;
+    }
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+
+    max-width: 700px;
+
+    
+    text-align: center;
+
+    h1{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        line-height: 1.5em;
+    }
+    button{
+        padding: 1em 5em;
+        border: none;
+        border-radius: 50em;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        color: $White;
+        background: linear-gradient(to right, $Cyan 5%, $Blue);
+        margin-bottom: 10em;
+
+        &:hover{
+            cursor: pointer;
+            background: linear-gradient(to right, hsl(176, 73%, 72%) 5%, hsl(198, 72%, 65%));
+        }
+    }
+}
+
+
+@media only screen and (min-width : 768px) {
+    .hero-banner{
+        background-image: url(../images/bg-curvy-desktop.svg);
+        img{
+            margin-top: 10em;
+        }
+    }
+    .hero-text{
+    
+        h1{
+            font-size: 2rem;
+        }
+        button{
+            padding: 1em 7em;
+        }
+        p{
+            font-size: 1rem
+        }
+    }
+}

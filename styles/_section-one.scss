@@ -1,0 +1,34 @@
+.section-one{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 3em;
+
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+
+}
+
+.section-one-grid-block{
+    text-align: center;
+    max-width: 450px;
+    padding: 3em;
+
+    img{
+        margin-bottom: 2em;
+    }
+    h3{
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.3rem;
+        margin-bottom: 0.8em;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+    .section-one{
+        grid-template-columns: 1fr 1fr;
+    
+    }
+}

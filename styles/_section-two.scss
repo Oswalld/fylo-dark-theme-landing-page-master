@@ -1,0 +1,59 @@
+.section-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+
+    width: 80%;
+    margin: 8em auto;
+    max-width:1240px ;
+    
+
+    .illutration-section-two{
+        width: 100%;
+    }
+}
+
+.text-section-two{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5em;
+
+    h2{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+    a{
+        display: flex;
+        align-items: center;
+        gap: 7px;
+
+        text-decoration: none;
+        border-bottom: 1px solid $Cyan;
+        padding-bottom: 3px;
+        color: $Cyan;
+
+        &:hover{
+            color: $White;
+            border-bottom: 1px solid $White;
+
+            circle{
+                fill: $White;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width : 768px) {
+    .section-two{
+        display: flex;
+        flex-direction: row;
+        gap: 4em;
+        .illutration-section-two{
+            width: 50%;
+        }
+    }
+
+}
